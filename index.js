@@ -3,13 +3,9 @@ const express = require('express')
 const app = express()
 const port = process.env.PORT || '3000'
 
-
-
-
 app.get('/oi', (req, res) => {
   res.send('Hello World!')
 })
-
 
 app.get('/', function(req, res, next) {
   res.json({message: 'alive'});
