@@ -1,0 +1,28 @@
+{
+  "name": "websocket",
+  "version": "1.0.0",
+  "description": "web socket with node teste",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiolmm/websocket.git"
+  },
+  "keywords": [
+    "ws",
+    "git",
+    "node"
+  ],
+  "author": "SLMM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergiolmm/websocket/issues"
+  },
+  "homepage": "https://github.com/sergiolmm/websocket#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.13.0"
+  }
+}
