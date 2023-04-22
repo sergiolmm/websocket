@@ -1,4 +1,17 @@
 const express = require('express')
+const app = express()
+const port = process.env.PORT || '3000'
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
+
+/*
+const express = require('express')
 
 var webserver = express()
 
@@ -14,15 +27,8 @@ webserver.use((req, res) =>
  var port = normalizePort(process.env.PORT || '3000');
  webserver.set('port', port);
 
-/**
- * Create HTTP server.
- */
-
 var server = http.createServer(webserver);
 
-/**
- * Listen on provided port, on all network interfaces.
- */
 
 server.listen(port);
 
@@ -70,3 +76,4 @@ server.listen(port);
  }
 }
 )
+*/
