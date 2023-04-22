@@ -1,3 +1,4 @@
+/*
 'use strict';
 const express = require('express');
 
@@ -18,15 +19,15 @@ io.on('connection', (socket) => {
     io.emit('message', args);
     console.log(args)
   });
-  
+
    socket.on('event_name', (...args) => {
     io.emit('message2', args);
      console.log(args)
   });
 });
+*/
 
 
-/*
 const express = require('express')
 const app = express()
 const porta = process.env.PORT || '3000'
@@ -43,7 +44,6 @@ app.listen(porta, () => {
   console.log(`Example app listening on port ${porta}`)
 })
 
-*/
 /*
 const express = require('express')
 
