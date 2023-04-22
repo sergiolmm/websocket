@@ -1,6 +1,6 @@
 'use strict';
 const express = require('express');
-const socketIO = require('socket.io');
+
 const PORT = process.env.PORT || 3001;
 const INDEX = '/index.html';
 const server = express()
@@ -11,7 +11,7 @@ const io = require("socket.io")(server,{
     origins: "*:*",
     methods: ["GET", "POST"]
   }
-});
+}).listen(443);
 io.on('connection', (socket) => {
   socket.on('disconnect', () => console.log('Client disconnected'));
   socket.on('messaged', (args) => {
