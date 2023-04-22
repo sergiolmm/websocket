@@ -1,3 +1,4 @@
+/*
 const express = require('express')
 const app = express()
 const port = process.env.PORT || '3000'
@@ -9,7 +10,7 @@ app.get('/oi', (req, res) => {
   res.send('Hello World!')
 })
 
-/* GET home page. */
+
 app.get('/', function(req, res, next) {
   res.json({message: 'alive'});
 });
@@ -17,8 +18,8 @@ app.get('/', function(req, res, next) {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+*/
 
-/*
 const express = require('express')
 
 var webserver = express()
@@ -29,7 +30,10 @@ webserver.use((req, res) =>
 
 
  //.listen(80, () => console.log(`Listening on ${80}`))
-
+ 
+ app.get('/oi', (req, res) => {
+   res.send('Hello World!')
+ })
 
 
  var port = normalizePort(process.env.PORT || '3000');
@@ -37,13 +41,9 @@ webserver.use((req, res) =>
 
 var server = http.createServer(webserver);
 
-
 server.listen(port);
 
 
- var port = normalizePort(process.env.PORT || '3000');
- app.set('port', port);
- 
  function normalizePort(val) {
   var port = parseInt(val, 10);
 
@@ -84,4 +84,3 @@ server.listen(port);
  }
 }
 )
-*/
