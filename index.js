@@ -1,7 +1,7 @@
 
 const express = require('express')
 const app = express()
-const port = process.env.PORT || '3000'
+const porta = process.env.PORT || '3000'
 
 app.get('/oi', (req, res) => {
   res.send('Hello World!')
@@ -11,8 +11,8 @@ app.get('/', function(req, res, next) {
   res.json({message: 'alive'});
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+app.listen(porta, () => {
+  console.log(`Example app listening on port ${porta}`)
 })
 
 
@@ -62,7 +62,7 @@ server.listen(port);
 */
  const { WebSocketServer } = require('ws')
 
- const sockserver = new WebSocketServer({ port: 443 })
+ const sockserver = new WebSocketServer({ port: porta })
 
  sockserver.on('connection', ws => {
  console.log('New client connected!')
